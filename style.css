@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 90px;
+}
+
+.components{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #18191F;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.login-btn, .signup-btn {
+    padding: 10px 20px;
+    border: 2px solid #4CAF4F;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+    margin-left: 10px;
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.login-btn{
+    color: #4CAF4F;
+}
+
+.signup-btn {
+    background-color: #4CAF4F;
+    color: #fff;
+}
+
+.login-btn:hover{
+    background-color: #4CAF4F;
+    color: #fff;
+}
+
+.signup-btn:hover {
+    opacity: 0.5;
+}
+
+/* Hero Section styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px ;
+    background-color: #F5F7FA;
+    height: 500px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #4D4D4D;
+}
+
+.hero h1 span {
+    color: #4CAF4F;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #717171;
+    margin: 20px 0;
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.dots {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.dots img {
+    width: 35px;
+    height: auto; 
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-image {
+        margin-bottom: 20px;
+    }
+}
