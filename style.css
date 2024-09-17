@@ -175,7 +175,7 @@ a {
 .clients {
     text-align: center;
     background-color: #fff;
-    padding: 40px 20px; /* Added padding for better spacing */
+    padding: 40px 20px;
 }
 
 .clients h2 {
@@ -196,20 +196,20 @@ a {
     display: flex;
     justify-content: center;
     gap: 100px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; 
 }
 
 .clients-logos img {
     width: 45px;
     height: auto;
-    margin: 10px; /* Added margin to avoid touching edges */
+    margin: 10px; 
 }
 
 /* Management System Section */
 .management {
     text-align: center;
     background-color: #fff;
-    padding: 40px 20px; /* Added padding for better spacing */
+    padding: 40px 20px; 
 }
 
 .management h2 {
@@ -230,8 +230,8 @@ a {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Added gap for spacing between cards */
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 
 .card {
@@ -325,7 +325,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 150px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; 
     padding: 0 20px; 
 }
 
@@ -402,7 +402,7 @@ a {
     align-items: flex-start;
     gap: 50px;
     background-color: #F5F7FA;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
     padding: 0 20px;
 }
 
@@ -480,37 +480,45 @@ a {
 }
 
 .m-images{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     position: relative;
+    flex-wrap: wrap;
 }
 
-.m-images img{
+.image-card{
+    position: relative;
+    display: inline-block;
+}
+
+.image-card img{
     width: 380px;
     height: auto;
-    margin-left: 10px;
-}
-
-.cards-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 130px;
-    z-index: 1; 
-    position: absolute;
-    bottom: -120px;
-    left: 50%; /* Position it 50% from the left */
-    transform: translateX(-50%); /* Move it left by 50% of its own width to center */
-    width: fit-content;
 }
 
 .cards{
-    max-width: 220px;
+    width: 280px;
     background-color: #F5F7FA;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 7px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    min-height: 180px;
+    justify-content: center;
+}
+
+.cards p{
+    max-width: 220px;
+    margin-right : auto;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #717171;
 }
 
 .read-more-btn{
@@ -529,7 +537,6 @@ a {
     background-color: #4CAF4F;
     color: #fff;
 }
-
 
 .try-app{
     background-color: #F5F7FA;
@@ -891,22 +898,21 @@ a {
         font-size: 14px;
     }
 
-    .m-images img {
-        max-width: 300px;
+    .m-images {
+        gap: 15px;
     }
 
-    .cards-container {
-        gap: 60px;
+    .image-card img {
+        width: 300px;
     }
 
     .cards {
-        max-width: 200px;
+        width: 250px;
+        bottom: -100px;
     }
 
-    .read-more-btn {
-        width: 120px;
-        height: 40px;
-        font-size: 12px;
+    .cards p {
+        font-size: 14px;
     }
 
     .try-app h1 {
@@ -1172,42 +1178,44 @@ a {
         margin-top: 10px;
     }
 
-    .feature-4 {
-        padding-bottom: 20px;
-    }
-
     .feature-4 h2 {
         font-size: 24px;
     }
 
     .feature-4 p {
-        font-size: 12px;
-        margin-bottom: 15px;
+        font-size: 13px;
     }
 
     .m-images {
-        gap: 5px;
+        display: block; 
+        text-align: center;
     }
 
-    .m-images img {
-        max-width: 250px;
+    .image-card {
+        margin-bottom: 50px; 
     }
 
-    .cards-container {
-        flex-direction: column;
-        gap: 30px;
-        bottom: -80px;
+    .image-card img {
+        width: 80%; 
     }
 
     .cards {
-        max-width: 100%;
+        width: 60%; 
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cards p {
+        font-size: 14px;
     }
 
     .read-more-btn {
-        width: 100px;
-        height: 36px;
-        font-size: 10px;
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
     }
+
 
     .try-app h1 {
         font-size: 30px;
