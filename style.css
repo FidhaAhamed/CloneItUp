@@ -935,7 +935,6 @@ a {
     }
 
     .footer {
-        flex-direction: column;
         gap: 40px;
         text-align: center;
     }
@@ -1237,27 +1236,25 @@ a {
 
     .footer {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        align-items: center;
     }
 
-    .details .logo {
-        width: 150px;
-    }
-
-    .details .socials {
-        justify-content: center;
+    .details {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .foot-list {
-        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .foot-content h3 {
-        font-size: 16px;
+    .input-wrapper {
+        margin-top: 20px;
     }
 
     .foot-content input {
-        width: 180px;
+        width: 100%;
+        max-width: 300px;
     }
 }
