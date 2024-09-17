@@ -25,11 +25,11 @@ a {
     position: relative;
 }
 
-.components{
+.components {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%; 
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -61,7 +61,7 @@ a {
     scroll-behavior: smooth;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     font-weight: bold;
     font-size: 16px;
     text-decoration: underline;
@@ -89,7 +89,7 @@ a {
     line-height: 18px;
 }
 
-.login-btn{
+.login-btn {
     color: #4CAF4F;
 }
 
@@ -98,7 +98,7 @@ a {
     color: #fff;
 }
 
-.login-btn:hover{
+.login-btn:hover {
     background-color: #4CAF4F;
     color: #fff;
 }
@@ -107,13 +107,12 @@ a {
     background-color: #3d8f3d;
 }
 
-
 /* Hero Section styles */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px ;
+    padding: 40px;
     background-color: #F5F7FA;
     height: 500px;
     position: relative;
@@ -162,21 +161,21 @@ a {
 }
 
 .dots {
-    position: absolute; 
-    bottom: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dots img {
     width: 35px;
-    height: auto; 
+    height: auto;
 }
-
 /* Our Clients Section */
 .clients {
     text-align: center;
     background-color: #fff;
+    padding: 40px 20px; /* Added padding for better spacing */
 }
 
 .clients h2 {
@@ -197,17 +196,20 @@ a {
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .clients-logos img {
     width: 45px;
     height: auto;
+    margin: 10px; /* Added margin to avoid touching edges */
 }
 
 /* Management System Section */
 .management {
     text-align: center;
     background-color: #fff;
+    padding: 40px 20px; /* Added padding for better spacing */
 }
 
 .management h2 {
@@ -226,13 +228,15 @@ a {
 
 .card-container {
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Added gap for spacing between cards */
 }
 
 .card {
     background-color: #fff;
-    box-shadow: 0px 2px 2px rgb(171, 190, 209, 0.2); 
+    box-shadow: 0px 2px 2px rgb(171, 190, 209, 0.2);
     padding: 20px;
     border-radius: 10px;
     width: 280px;
@@ -240,7 +244,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: auto; 
+    height: auto;
 }
 
 .card img {
@@ -252,7 +256,7 @@ a {
     font-size: 22px;
     color: #4D4D4D;
     margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .card p {
@@ -260,7 +264,6 @@ a {
     color: #717171;
     text-align: center;
 }
-
 
 /* Feature Section */
 .feature-1 {
@@ -270,10 +273,13 @@ a {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 20px;
 }
 
 .image img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
@@ -319,6 +325,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 150px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 20px; 
 }
 
 .text-content h1{
@@ -346,6 +354,7 @@ a {
     justify-items: center;
     margin-top: 60px;
     margin-bottom: 60px;
+    padding: 0 20px;
 }
 
 .highlight {
@@ -393,6 +402,8 @@ a {
     align-items: flex-start;
     gap: 50px;
     background-color: #F5F7FA;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 20px;
 }
 
 .feature-3 .tesla-img img {
@@ -698,3 +709,555 @@ a {
     cursor: pointer;
 }
 
+/* Media queries for 1024px and 768px screens */
+@media (max-width: 1024px) {
+    .navbar {
+        height: 80px;
+    }
+   
+    .logo img {
+        width: 140px;
+    }
+  
+    .nav-links li {
+        margin-right: 30px;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+    }
+
+    .nav-buttons button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .register-btn {
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .hero-image img {
+        width: 300px;
+    }
+
+    .dots {
+        bottom: 10px;
+    }
+
+    .dots img {
+        width: 25px;
+    }
+
+    .clients h2 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .clients p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .clients-logos {
+        gap: 50px;
+    }
+
+    .clients-logos img {
+        width: 40px;
+    }
+
+    .management h2 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .management p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .card-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 240px;
+    }
+
+    .card h4 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+    .feature-1 {
+        gap: 20px;
+    }
+
+    .text h3 {
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .learn-more-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .feature-2 {
+        gap: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .highlight {
+        padding: 15px;
+    }
+
+    .highlight img {
+        width: 40px;
+    }
+
+    .highlight h3 {
+        font-size: 20px;
+    }
+
+    .highlight p {
+        font-size: 14px;
+    }
+
+    .feature-3 {
+        gap: 30px;
+    }
+
+    .feature-3 .tesla-img img {
+        max-width: 250px;
+    }
+
+    .feature-3 .text p {
+        font-size: 13px;
+    }
+
+    .feature-3 .text .name {
+        font-size: 15px;
+    }
+
+    .feature-3 .text .p1 {
+        font-size: 14px;
+    }
+
+    .custom-logos img {
+        width: 30px;
+    }
+
+    .custom-link {
+        font-size: 14px;
+    }
+
+    .feature-4 h2 {
+        font-size: 28px;
+    }
+
+    .feature-4 p {
+        font-size: 14px;
+    }
+
+    .m-images img {
+        max-width: 300px;
+    }
+
+    .cards-container {
+        gap: 60px;
+    }
+
+    .cards {
+        max-width: 200px;
+    }
+
+    .read-more-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .try-app h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    .faq-container {
+        max-width: 90%;
+    }
+
+    .faq-item {
+        padding: 15px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .foot-content {
+        text-align: center;
+    }
+
+    .details p {
+        line-height: 18px;
+    }
+
+    .foot-content input {
+        width: 220px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 0 5px;
+    }
+
+    .components {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+    }
+
+    .nav-buttons button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 10px;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .register-btn {
+        width: 80px;
+        height: 35px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .dots img {
+        width: 20px;
+    }
+
+    .clients {
+        padding: 20px;
+    }
+
+    .clients h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .clients p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .clients-logos {
+        gap: 20px;
+    }
+
+    .clients-logos img {
+        width: 35px;
+    }
+
+    .management {
+        padding: 20px;
+    }
+
+    .management h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .management p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        gap: 10px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .feature-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .text h3 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+
+    .learn-more-btn {
+        width: 100px;
+        height: 36px;
+        font-size: 10px;
+    }
+
+    .feature-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .text-content {
+        padding: 0;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+    }
+
+    .text-content p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight img {
+        width: 40px;
+    }
+
+    .highlight h3 {
+        font-size: 18px;
+    }
+
+    .highlight p {
+        font-size: 12px;
+    }
+
+    .feature-3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-3 .tesla-img img {
+        max-width: 100%;
+    }
+
+    .feature-3 .text {
+        padding: 0;
+    }
+
+    .feature-3 .text p {
+        font-size: 12px;
+    }
+
+    .feature-3 .text .name {
+        font-size: 14px;
+    }
+
+    .feature-3 .text .p1 {
+        font-size: 12px;
+    }
+
+    .customers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-logos {
+        gap: 10px;
+    }
+
+    .custom-logos img {
+        width: 30px;
+    }
+
+    .custom-link {
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .feature-4 {
+        padding-bottom: 20px;
+    }
+
+    .feature-4 h2 {
+        font-size: 24px;
+    }
+
+    .feature-4 p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .m-images {
+        gap: 5px;
+    }
+
+    .m-images img {
+        max-width: 250px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 30px;
+        bottom: -80px;
+    }
+
+    .cards {
+        max-width: 100%;
+    }
+
+    .read-more-btn {
+        width: 100px;
+        height: 36px;
+        font-size: 10px;
+    }
+
+    .try-app h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .faq h2 {
+        font-size: 24px;
+    }
+
+    .faq-container {
+        max-width: 100%;
+    }
+
+    .faq-item {
+        padding: 10px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .details .logo {
+        width: 150px;
+    }
+
+    .details .socials {
+        justify-content: center;
+    }
+
+    .foot-list {
+        font-size: 12px;
+    }
+
+    .foot-content h3 {
+        font-size: 16px;
+    }
+
+    .foot-content input {
+        width: 180px;
+    }
+}
