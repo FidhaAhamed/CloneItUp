@@ -51,8 +51,18 @@ a {
     color: #18191F;
 }
 
+.nav-links a:hover{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    color: 263238;
+}
+
 .nav-buttons {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-btn, .signup-btn {
@@ -64,7 +74,7 @@ a {
     background-color: #fff;
     margin-left: 10px;
     width: 100px;
-    height: 45px;
+    height: 40px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -84,7 +94,7 @@ a {
 }
 
 .signup-btn:hover {
-    opacity: 0.5;
+    background-color: #3d8f3d;
 }
 
 /* Hero Section styles */
@@ -127,7 +137,11 @@ a {
     font-size: 14px;
     cursor: pointer;
     width: 100px;
-    height: 45px;
+    height: 40px;
+}
+
+.register-btn:hover {
+    background-color: #3d8f3d;
 }
 
 .hero-image img {
@@ -146,6 +160,281 @@ a {
 .dots img {
     width: 35px;
     height: auto; 
+}
+
+/* Our Clients Section */
+.clients {
+    text-align: center;
+    background-color: #fff;
+}
+
+.clients h2 {
+    font-size: 32px;
+    color: #4D4D4D;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.clients p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+    margin-bottom: 40px;
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.clients-logos img {
+    width: 45px;
+    height: auto;
+}
+
+/* Management System Section */
+.management {
+    text-align: center;
+    background-color: #fff;
+}
+
+.management h2 {
+    font-size: 32px;
+    color: #4D4D4D;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.management p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgb(171, 190, 209, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto; 
+}
+
+.card img {
+    width: 50px;
+    height: auto;
+}
+
+.card h4 {
+    font-size: 22px;
+    color: #4D4D4D;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.card p {
+    font-size: 14px;
+    color: #717171;
+    text-align: center;
+}
+
+
+/* Feature Section */
+.feature-1 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.image img {
+    width: 400px;
+    height: auto;
+}
+
+.text {
+    max-width: 550px;
+}
+
+.text h3 {
+    font-size: 32px;
+    color: #4D4D4D;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.text p {
+    font-size: 14px;
+    color: #717171;
+    text-align: left;
+}
+
+.learn-more-btn {
+    padding: 12px 24px;
+    background-color: #4CAF4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 130px;
+    height: 44px;
+    margin-top: 20px;
+}
+
+.learn-more-btn:hover {
+    background-color: #3d8f3d;
+}
+
+.feature-2{
+    margin-top: 40px;
+    background-color: #F5F7FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.text-content h1{
+    font-size: 32px;
+    color: #4D4D4D;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.text-content h1 span{
+    color: #4CAF4F;
+}
+
+.text-content p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+    margin-bottom: 50px;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    justify-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.highlight {
+    display: flex; /* Use flexbox to align the image and text side by side */
+    align-items: center; /* Vertically align items */
+    padding: 20px;
+    text-align: left; /* Align the text to the left */
+    border-radius: 8px;
+    gap: 15px; /* Space between the image and text */
+}
+
+.highlight img {
+    width: 50px;
+    height: auto;
+}
+
+.highlight-text {
+    display: flex;
+    flex-direction: column; /* Stack the number and description vertically */
+}
+
+.highlight h3 {
+    font-size: 22px;
+    color: #4D4D4D;
+    margin: 0;
+}
+
+.highlight p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+    margin: 0;
+}
+
+.highlight img{
+    width: 45px;
+    height: auto;
+}
+
+.feature-3 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: #F5F7FA;
+}
+
+.feature-3 .tesla-img img {
+    width: 300px; 
+    margin-top: 50px; 
+    margin-bottom: 40px; 
+}
+
+.feature-3 .text {
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.feature-3 .text p {
+    font-size: 14px;
+    color: #717171;
+    text-align: left;
+}
+
+.feature-3 .text .name{
+    color: #4CAF4F;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.feature-3 .text .p1{
+    color: #89939E;
+}
+
+.customers {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-logos {
+    display: flex;
+    gap: 25px;
+}
+
+.custom-logos img{
+    width: 38px;
+}
+
+.custom-link {
+    color: #4CAF4F;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
 }
 
 /* Responsive styles */
