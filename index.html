@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <title>Document</title>
 </head>
@@ -15,12 +16,12 @@
                 <img src="assets/logo.png" alt="CourzGen">
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Feature</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#feature">Feature</a></li>
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Testimonial</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
             <div class="nav-buttons">
                 <button class="login-btn">Login</button>
@@ -30,7 +31,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
     <div class="components">
         <div class="hero-content">
             <h1>Lessons and insights <br> from <span>8 years</span></h1>
@@ -62,7 +63,7 @@
     </section>
 
     <!-- Management System Section -->
-    <section class="management">
+    <section class="management" id="service">
         <h2>Manage your entire community <br> in a single system</h2>
         <p>Who is Nextcent suitable for?</p>
         <div class="card-container">
@@ -85,7 +86,7 @@
     </section>
 
     <!-- Feature Section -->
-    <section class="feature-1">
+    <section class="feature-1" id="feature">
         <div class="image">
             <img src="assets/Feature 1 Illustration.png" alt="Illustration">
         </div>
@@ -180,6 +181,105 @@
         </div>
     </section>
 
-    <div class="footer"></div>
+    <section class="feature-4">
+            <h2>Caring is the new marketing</h2>
+            <p>The Nexcent blog is the best place to read about the latest membership insights, <br> trends and more. See who's joining the 
+                community, 
+                read about how our community <br> are increasing their membership income and lot's more.​</p>
+        <div class="m-images">
+            <img src="assets/image 18.png" alt="">
+            <img src="assets/image 19.png" alt="">
+            <img src="assets/image 20.png" alt="">
+            <div class="cards-container">
+                <div class="cards">
+                    <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+                    <button class="read-more-btn">Read more →</button>
+                </div>
+                <div class="cards">
+                    <p>What are your safeguarding responsibilities and how can you manage them?</p>
+                    <button class="read-more-btn">Read more →</button>
+                </div>
+                <div class="cards">
+                    <p>Revamping the Membership Model with Triathlon Australia</p>
+                    <button class="read-more-btn">Read more →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="try-app">
+        <h1>Wanna try our app?</h1>
+        <button class="demo-button"> Get a demo →</button>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3 class="faq-question">What is CourzGen?</h3>
+                <p class="faq-answer">CourzGen is a platform that helps you manage and grow your community by offering tools for memberships, event bookings, payments, and more.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How can I register for CourzGen?</h3>
+                <p class="faq-answer">You can register by clicking the "Register" button in the Hero section, and filling out the necessary details in the registration form.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is there a free trial available?</h3>
+                <p class="faq-answer">Yes, we offer a free trial so you can explore our features before committing to a subscription.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I cancel my subscription anytime?</h3>
+                <p class="faq-answer">Absolutely. You can cancel your subscription at any time from your account settings.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What types of payments are accepted?</h3>
+                <p class="faq-answer">We accept payments through all major credit cards, PayPal, and bank transfers.</p>
+            </div>
+        </div>
+    </section>  
+
+    <div class="footer">
+        <div class="details">
+            <img src="assets/whitelogo.png" alt="" class="logo">
+            <p>Copyright © 2024 Riglabs Collective</p>
+            <p>All rights reserved.</p>
+            <div class="socials">
+                <img src="assets/insta.png" alt="">
+                <img src="assets/browser.png" alt="">
+                <img src="assets/twitter.png" alt="">
+                <img src="assets/youtube.png" alt="">
+            </div>
+        </div>
+        <div class="foot-content">
+            <h3>Company</h3>
+            <ul class="foot-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        
+        <div class="foot-content">
+            <h3>Support</h3>
+            <ul class="foot-list">
+                <li><a href="#">Help center</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Status</a></li>
+            </ul>
+        </div>       
+        <div class="foot-content">
+            <h3>Stay up to date</h3>
+            <div class="input-wrapper">
+                <input type="email" placeholder="Your email address">
+                <img src="assets/send.png" alt="icon" class="input-icon">
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
